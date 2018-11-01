@@ -1,0 +1,124 @@
+/*!
+ * Copyright (c) 2018.
+ * All Rights Reserved to magiCCoder.
+ * This work is protected by copyright laws and international treaties.
+ */
+/*!
+ * Created by: Valentin Sickert
+ * Date: 31.10.18 14:16
+ * Project: magiCCoder-Branding
+ */
+/*==========================================
+ *               Fonts
+ *==========================================*/
+@font-face {
+  font-family: 'magiccoder';
+  src: url("../fonts/magiccoder.eot?uut6rr");
+  src: url("../fonts/magiccoder.eot?uut6rr#iefix") format("embedded-opentype"), url("../fonts/magiccoder.ttf?uut6rr") format("truetype"), url("../fonts/magiccoder.woff?uut6rr") format("woff"), url("../fonts/magiccoder.svg?uut6rr#magiccoder") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+i.mgicc {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'magiccoder' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.mgicc-magicstar:before {
+  content: "\e901"; }
+
+.mgicc-mgicc:before {
+  content: "\e902"; }
+
+.mgicc-magiccoder:before {
+  content: "\e900"; }
+
+/*==========================================
+ *                Color Vars
+ *==========================================*/
+/*==========================================
+ *                    CSS
+ *==========================================*/
+.mb-6, .my-6 {
+  margin-bottom: 6rem !important; }
+
+.mt-6, .my-6 {
+  margin-top: 6rem !important; }
+
+html, body, header, .view {
+  height: 100%; }
+
+.view {
+  background-size: cover;
+  background: linear-gradient(to right, #fe6c19, #1754f8) no-repeat center center; }
+
+.btn .fa {
+  margin-left: 3px; }
+
+.btn-white {
+  color: #212121 !important; }
+
+.navbar {
+  background: #ffffff !important; }
+
+h6 {
+  line-height: 1.7; }
+
+.wow {
+  visibility: hidden; }
+
+.blackBGPattern, .whiteBGPattern {
+  background-position: 0 0,30px 30px;
+  background-size: 20px 20px; }
+
+.whiteBGPattern {
+  background: transparent linear-gradient(45deg, #f6f6f6 25%, transparent 0, transparent 75%, #f6f6f6 0, #f6f6f6), linear-gradient(45deg, #f6f6f6 25%, transparent 0, transparent 75%, #f6f6f6 0, #f6f6f6); }
+  .whiteBGPattern a {
+    color: #1754f8; }
+
+.blackBGPattern {
+  background: #212121 linear-gradient(45deg, #2e3033 25%, transparent 0, transparent 75%, #2e3033 0, #2e3033), linear-gradient(45deg, #2e3033 25%, transparent 0, transparent 75%, #2e3033 0, #2e3033); }
+  .blackBGPattern a {
+    color: #fe6c19; }
+
+#colors .card {
+  height: 300px;
+  width: 20%; }
+  #colors .card .card-body .top {
+    position: absolute;
+    top: .5rem;
+    left: .75rem; }
+  #colors .card .card-body .bottom {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: .75rem; }
+
+/*==========================================
+ *               Media Query's
+ *==========================================*/
+@media (max-width: 1199.98px) {
+  .view {
+    background-size: cover;
+    background: linear-gradient(to top, #fe6c19, #1754f8) no-repeat center center; } }
+@media (max-width: 740px) {
+  html, body, header, .view {
+    height: 1000px; } }
+@media (min-width: 800px) and (max-width: 850px) {
+  html, body, header, .view {
+    height: 600px; } }
+@media (max-width: 848px) {
+  #colors .col-12 {
+    display: block !important; }
+    #colors .col-12 .card {
+      height: 120px;
+      width: 100%;
+      margin: .5rem 0 !important; } }
+
+/*# sourceMappingURL=style.css.map */

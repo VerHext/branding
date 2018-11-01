@@ -1,0 +1,173 @@
+/*!
+ * Copyright (c) 2018.
+ * All Rights Reserved to magiCCoder.
+ * This work is protected by copyright laws and international treaties.
+ */
+
+/*!
+ * Created by: Valentin Sickert
+ * Date: 31.10.18 14:16
+ * Project: magiCCoder-Branding
+ */
+
+/*==========================================
+ *               Fonts
+ *==========================================*/
+
+
+@font-face {
+  font-family: 'magiccoder';
+  src:  url('../fonts/magiccoder.eot?uut6rr');
+  src:  url('../fonts/magiccoder.eot?uut6rr#iefix') format('embedded-opentype'),
+  url('../fonts/magiccoder.ttf?uut6rr') format('truetype'),
+  url('../fonts/magiccoder.woff?uut6rr') format('woff'),
+  url('../fonts/magiccoder.svg?uut6rr#magiccoder') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i.mgicc {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'magiccoder' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mgicc-magicstar:before {
+  content: "\e901";
+}
+.mgicc-mgicc:before {
+  content: "\e902";
+}
+.mgicc-magiccoder:before {
+  content: "\e900";
+}
+
+/*==========================================
+ *                Color Vars
+ *==========================================*/
+
+$brand_orange: #fe6c19;
+$brand_blue: #1754f8;
+$brand_white: #ffffff;
+$brand_dark: #212121;
+
+/*==========================================
+ *                    CSS
+ *==========================================*/
+
+.mb-6, .my-6 {
+  margin-bottom: 6rem !important;
+}
+.mt-6, .my-6 {
+  margin-top: 6rem !important;
+}
+
+html, body, header, .view {
+  height: 100%;
+}
+
+.view {
+  background-size: cover;
+  background: linear-gradient(to right, $brand_orange, $brand_blue) no-repeat center center;
+}
+
+.btn .fa {
+  margin-left: 3px;
+}
+
+.btn-white {
+  color: $brand_dark !important;
+}
+
+.navbar {
+  background: $brand_white !important;
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.blackBGPattern, .whiteBGPattern {
+  background-position: 0 0,30px 30px;
+  background-size: 20px 20px;
+}
+
+.whiteBGPattern {
+  background: transparent linear-gradient(45deg, #f6f6f6 25%, transparent 0, transparent 75%, #f6f6f6 0, #f6f6f6), linear-gradient(45deg, #f6f6f6 25%, transparent 0, transparent 75%, #f6f6f6 0, #f6f6f6);
+  a {
+    color: $brand_blue;
+  }
+}
+.blackBGPattern {
+  background: $brand_dark linear-gradient(45deg, #2e3033 25%, transparent 0, transparent 75%, #2e3033 0, #2e3033), linear-gradient(45deg, #2e3033 25%, transparent 0, transparent 75%, #2e3033 0, #2e3033);
+  a {
+    color: $brand_orange;
+  }
+}
+
+#colors {
+  .card {
+    height: 300px;
+    width: 20%;
+    .card-body{
+      .top {
+        position: absolute;
+        top: .5rem;
+        left: .75rem;
+      }
+      .bottom {
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0;
+        left: .75rem;
+      }
+    }
+  }
+}
+
+/*==========================================
+ *               Media Query's
+ *==========================================*/
+
+@media (max-width: 1199.98px) {
+  .view {
+    background-size: cover;
+    background: linear-gradient(to top, $brand_orange, $brand_blue) no-repeat center center;
+  }
+}
+
+@media (max-width: 740px) {
+  html, body, header, .view {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html, body, header, .view {
+    height: 600px;
+  }
+}
+
+@media (max-width: 848px) {
+  #colors .col-12{
+    display: block !important;
+    .card {
+      height: 120px;
+      width: 100%;
+      margin: .5rem 0 !important;
+    }
+  }
+}
